@@ -1,50 +1,59 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <title>Keiffer Culbreth | SoftwareDeveloper</title>
+     <title>Keiffer Culbreth | Software Developer</title>
      <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!--Import materialize.css-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+     <link rel="stylesheet" href="CSS/Main.css">
+
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+     <script src="JS/Script.js"></script>
    </head>
 
 
    <body>
      <!--NavBar-->
-  <div class="navbar-fixed">
+  <div class="navbar-fixed ">
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper cyan">
         <a href="#" class="brand-logo center"><img src="IMG/Logo.png" class="responsive-img center"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a class"waves-effect waves-light" href="About">About Me</a></li>
-          <li><a href="Projects">Projects</a></li>
-          <li><a href="Contact">Contact Me</a></li>
+          <li><a class"waves-effect waves-light" href="HTMLPages/AboutMe.html">About Me</a></li>
+          <li><a href="HTMLPages/Projects.html">Projects</a></li>
+          <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
-      <!--Collapsible Table-->
+      <!--Collapsible Table for Education and Work-->
        <ul class="collapsible" data-collapsible="accordion">
 
          <!--Education-->
          <li>
-           <div class="collapsible-header">
+           <div class="collapsible-header" onclick="arrow.toggleIcon()">
              <i class="material-icons">code</i>
              Education
+             <i class="material-icons right">code</i>
            </div>
 
           <!--Anderson-->
            <div class="collapsible-body">
              <div class="col s12 m8 offset-m2 l6 offset-l3">
                   <div class="row valign-wrapper">
-                    <div class="col s8">
+                    <div class="col s6">
                       <img src="IMG/Anderson.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
-                    <div class="col s4">
-                      <ul class="collapsible" data-collapsible="accordion">
+                    <div class="col s6">
+                      <!--Collapsible Table for Education Elements-->
+                      <ul class="collapsible popout" data-collapsible="accordion">
                           <li>
                             <div class="collapsible-header">BS-CIS</div>
                               <div class="collapsible-body">
@@ -75,7 +84,7 @@
                                   finance and computer science. </i></b>
                               </div>
                           </li>
-                        </ul>
+                        </ul><!-- End Collapsible Table for Education Elements-->
                     </div>
                   </div>
               </div>
@@ -95,17 +104,22 @@
           <div class="collapsible-body"><p>
              <div class="col s12 m8 offset-m2 l6 offset-l3">
                   <div class="row valign-wrapper">
-                    <div class="col s8">
+                    <div class="col s6">
                       <img src="IMG/StateFarm.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
                     </div>
-                    <div class="col s4">
+                    <div class="col s6">
                       <span class="black-text">
-                        <ul class="collapsible" data-collapsible="accordion">
+                        <!--Collapsible Table for Work Elements-->
+                        <ul class="collapsible popout" data-collapsible="accordion">
                             <li>
                               <div class="collapsible-header">SEO Intern</div>
                                 <div class="collapsible-body">
-                                  <b>Learned about the primary aspects of CS and OOP such as polymorphism,
-                                   inheritence, and a small amount of multithreading </b>
+                                  <ul> <li>•	Worked on SEO and increased website visits for the agency by 120%</li>
+                                       <li>•  Investigated functionality of marketing system and presented to office to synthesize into operations</li>
+                                       <li>•	Took a test and got NC Personal Lines Insurance License</li>
+                                       <li>•	Handled customer accounts and made alterations requested by the customer</li>
+                                  </ul>
+                                  <!--End Collapsible Table for Work Elements-->
                                 </div>
                             </li>
                         </ul>
@@ -117,27 +131,32 @@
               <!--The Harford-->
               <div class="col s12 m8 offset-m2 l6 offset-l3">
                    <div class="row valign-wrapper">
-                     <div class="col s8">
+                     <div class="col s6">
                        <img src="IMG/Hartford.png" class="responsive-img" > <!-- notice the "circle" class -->
                      </div>
-                     <div class="col s4">
+                     <div class="col s6">
                        <span class="black-text">
-                         <ul class="collapsible" data-collapsible="accordion">
+                         <!--Collapsible Table for Work Elements-->
+                         <ul class="collapsible popout" data-collapsible="accordion">
                              <li>
                                <div class="collapsible-header">LDP Intern</div>
                                  <div class="collapsible-body">
-                                   <b>Learned about the primary aspects of CS and OOP such as polymorphism,
-                                    inheritence, and a small amount of multithreading </b>
+                                   <ul> <li>•	Worked with development team on Guidewire configuration </li>
+                                        <li>•	Had three personal major ideas/projects implemented companywide to increase security and shirk costs</li>
+                                        <li>•	Presented a capstone anti-phishing project to senior management and created a security function for email that was pushed to all computers in the company</li>
+                                        <li>•	Developed two applications and their pcfs that were presented to senior developers and deployed into production</li>
+                                   </ul>
                                  </div>
                              </li>
                              <li>
                                <div class="collapsible-header">ECLDP Associate</div>
                                  <div class="collapsible-body">
-                                   <b>Learned about the economic concepts of the market
-                                      and then took a more in depth look at finance</b>
+                                   <ul> <li>•	First Rotation: Worked with development team on a payroll billing optimization project that handled $2B in payroll billing</li>
+                                   </ul>
                                  </div>
                              </li>
                           </ul>
+                          <!--End Collapsible Table for Work Elements-->
                        </span>
                      </div>
                    </div>
@@ -147,9 +166,5 @@
         </li><!--End Work Experience-->
 
       </ul>  <!--End Collapsible Table-->
-
-     <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
    </body>
  </html>
