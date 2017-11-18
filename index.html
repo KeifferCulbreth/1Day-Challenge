@@ -8,163 +8,270 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
      <link rel="stylesheet" href="CSS/Main.css">
 
+     <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- javascript imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> <!-- typeit -->
 
-     <script src="JS/Script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script src="JS/Script.js"></script>
+
    </head>
 
 
    <body>
-     <!--NavBar-->
-  <div class="navbar-fixed ">
-    <nav>
-      <div class="nav-wrapper cyan">
-        <a href="#" class="brand-logo center"><img src="IMG/Logo.png" class="responsive-img center"></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a class"waves-effect waves-light" href="HTMLPages/AboutMe.html">About Me</a></li>
-          <li><a href="HTMLPages/Projects.html">Projects</a></li>
-          <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
-        </ul>
+  <!--
+   -->
+
+<div class="container-fluid">
+    <div class="full">
+      <div class="hello">
+          Hi, I'm <strong>Keiffer Culbreth</strong>
+          <div id="message"></div>
       </div>
-    </nav>
-  </div>
-
-      <!--Collapsible Table for Education and Work-->
-       <ul class="collapsible" data-collapsible="accordion">
-
-         <!--Education-->
-         <li>
-           <div class="collapsible-header" onclick="arrow.toggleIcon()">
-             <i class="material-icons">code</i>
-             Education
-             <i class="material-icons right">code</i>
-           </div>
-
-          <!--Anderson-->
-           <div class="collapsible-body">
-             <div class="col s12 m8 offset-m2 l6 offset-l3">
-                  <div class="row valign-wrapper">
-                    <div class="col s6">
-                      <img src="IMG/Anderson.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s6">
-                      <!--Collapsible Table for Education Elements-->
-                      <ul class="collapsible popout" data-collapsible="accordion">
-                          <li>
-                            <div class="collapsible-header">BS-CIS</div>
-                              <div class="collapsible-body">
-                                <b>Learned about the primary aspects of CS and OOP such as polymorphism,
-                                 inheritence, and a small amount of multithreading </b>
-                              </div>
-                          </li>
-                          <li>
-                            <div class="collapsible-header">BS-Financial Economics</div>
-                              <div class="collapsible-body">
-                                <b>Learned about the economic concepts of the market
-                                   and then took a more in depth look at finance</b>
-                              </div>
-                          </li>
-                          <li>
-                            <div class="collapsible-header">Why I Chose These Two</div>
-                              <div class="collapsible-body">
-                                <b><i>I originally was only going to pursue finance, because that is what
-                                  I was most comfortable with and the major which members of my family had received.
-                                  However, while I loved finance, I found computers to be fascinating.
-                                  I was talking to one of my good friends about this and he recommended that
-                                  I take just one programming class to see how I liked it.
-                                  He thought it would match well with my love for problem solving and logical thinking.
-                                  He was right and I fell in love with the topic. So, I figured the decision between
-                                  these two areas did not need to be binary(pun intended) and that they would in fact make
-                                  a powerful coupling that would make me a well rounded individual. This would allow me to
-                                  contribute a unique skill set, an in depth knowledge and love for both
-                                  finance and computer science. </i></b>
-                              </div>
-                          </li>
-                        </ul><!-- End Collapsible Table for Education Elements-->
-                    </div>
-                  </div>
-              </div>
-           </div><!--End Anderson-->
-
-         </li><!--End Education-->
-
-         <!--Work Experience-->
-         <li>
-           <div class="collapsible-header">
-             <i class="material-icons">work</i>
-             Work Experience
-           </div>
+      <a href="#">
+          <div class="see_more">
+              <span id="get_to_know" class="type_it_message">get to know me</span><br>
+              <span class="glyphicon glyphicon-chevron-down gi-2x"></span>
+          </div>
+      </a>
+    </div>
+</div>
+<div id="begin_main" class="filler"></div>
+<div class="container-fluid project">
 
 
-             <!--State Farm-->
-          <div class="collapsible-body"><p>
-             <div class="col s12 m8 offset-m2 l6 offset-l3">
-                  <div class="row valign-wrapper">
-                    <div class="col s6">
-                      <img src="IMG/StateFarm.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s6">
-                      <span class="black-text">
-                        <!--Collapsible Table for Work Elements-->
+    <!-- <div class="navbar-fixed " id="menu">
+      <nav class="menu" data-target="menu">
+        <div class="nav-wrapper cyan">
+          <a href="index.html" class="brand-logo center"><img class="responsive-img" id="logo" src="IMG/Logo.png"/></a>
+          <ul id="nav-desktop" class="right hide-on-med-and-down">
+            <li><a class"waves-effect waves-light" href="HTMLPages/AboutMe.html">About Me</a></li>
+            <li><a href="HTMLPages/Projects.html">Projects</a></li>
+            <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
+          </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="side-nav  hide-on-large" id="mobile-demo">
+            <li><a href="HTMLPages/AboutMe.html">About Me</a></li>
+            <li><a href="HTMLPages/Projects.html">Projects</a></li>
+            <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div> -->
+        <!--Collapsible Table for Education and Work-->
+         <ul class="collapsible" data-collapsible="expandable">
+
+           <!--Education-->
+           <li>
+             <div class="collapsible-header active">
+               <i class="material-icons">code</i>
+               Education
+             </div>
+
+            <!--Anderson-->
+             <div class="collapsible-body">
+               <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <div class="row valign-wrapper">
+                      <div class="col s6">
+                        <img src="IMG/Anderson.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s6">
+                        <!--Collapsible Table for Education Elements-->
                         <ul class="collapsible popout" data-collapsible="accordion">
                             <li>
-                              <div class="collapsible-header">SEO Intern</div>
+                              <div class="collapsible-header">BS-CIS</div>
                                 <div class="collapsible-body">
-                                  <ul> <li>•	Worked on SEO and increased website visits for the agency by 120%</li>
-                                       <li>•  Investigated functionality of marketing system and presented to office to synthesize into operations</li>
-                                       <li>•	Took a test and got NC Personal Lines Insurance License</li>
-                                       <li>•	Handled customer accounts and made alterations requested by the customer</li>
-                                  </ul>
-                                  <!--End Collapsible Table for Work Elements-->
+                                  <b>Learned about the primary aspects of CS and OOP such as polymorphism,
+                                   inheritence, and a small amount of multithreading </b>
                                 </div>
                             </li>
-                        </ul>
-                      </span>
+                            <li>
+                              <div class="collapsible-header">BS-Financial Economics</div>
+                                <div class="collapsible-body">
+                                  <b>Learned about the economic concepts of the market
+                                     and then took a more in depth look at finance</b>
+                                </div>
+                            </li>
+                            <li>
+                              <div class="collapsible-header">Why I Chose These Two</div>
+                                <div class="collapsible-body">
+                                  <b><i>I originally was only going to pursue finance, because that is what
+                                    I was most comfortable with and the major which members of my family had received.
+                                    However, while I loved finance, I found computers to be fascinating.
+                                    I was talking to one of my good friends about this and he recommended that
+                                    I take just one programming class to see how I liked it.
+                                    He thought it would match well with my love for problem solving and logical thinking.
+                                    He was right and I fell in love with the topic. So, I figured the decision between
+                                    these two areas did not need to be binary(pun intended) and that they would in fact make
+                                    a powerful coupling that would make me a well rounded individual. This would allow me to
+                                    contribute a unique skill set, an in depth knowledge and love for both
+                                    finance and computer science. </i></b>
+                                </div>
+                            </li>
+                          </ul><!-- End Collapsible Table for Education Elements-->
+                      </div>
                     </div>
-                  </div>
-              </div><!--End State Farm-->
-            <div class="divider" padding=50 ></div>
-              <!--The Harford-->
-              <div class="col s12 m8 offset-m2 l6 offset-l3">
-                   <div class="row valign-wrapper">
-                     <div class="col s6">
-                       <img src="IMG/Hartford.png" class="responsive-img" > <!-- notice the "circle" class -->
-                     </div>
-                     <div class="col s6">
-                       <span class="black-text">
-                         <!--Collapsible Table for Work Elements-->
-                         <ul class="collapsible popout" data-collapsible="accordion">
-                             <li>
-                               <div class="collapsible-header">LDP Intern</div>
-                                 <div class="collapsible-body">
-                                   <ul> <li>•	Worked with development team on Guidewire configuration </li>
-                                        <li>•	Had three personal major ideas/projects implemented companywide to increase security and shirk costs</li>
-                                        <li>•	Presented a capstone anti-phishing project to senior management and created a security function for email that was pushed to all computers in the company</li>
-                                        <li>•	Developed two applications and their pcfs that were presented to senior developers and deployed into production</li>
-                                   </ul>
-                                 </div>
-                             </li>
-                             <li>
-                               <div class="collapsible-header">ECLDP Associate</div>
-                                 <div class="collapsible-body">
-                                   <ul> <li>•	First Rotation: Worked with development team on a payroll billing optimization project that handled $2B in payroll billing</li>
-                                   </ul>
-                                 </div>
-                             </li>
+                </div>
+             </div><!--End Anderson-->
+
+           </li><!--End Education-->
+
+           <!--Work Experience-->
+           <li>
+             <div class="collapsible-header active">
+               <i class="material-icons">work</i>
+               Work Experience
+             </div>
+
+
+               <!--State Farm-->
+            <div class="collapsible-body"><p>
+               <div class="col s12 m8 offset-m2 l6 offset-l3">
+                    <div class="row valign-wrapper">
+                      <div class="col s6">
+                        <img src="IMG/StateFarm.png" alt="" class="responsive-img"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s6">
+                        <span class="black-text">
+                          <!--Collapsible Table for Work Elements-->
+                          <ul class="collapsible popout" data-collapsible="accordion">
+                              <li>
+                                <div class="collapsible-header">SEO Intern</div>
+                                  <div class="collapsible-body">
+                                    <ul> <li>•	Worked on SEO and increased website visits for the agency by 120%</li>
+                                         <li>•  Investigated functionality of marketing system and presented to office to synthesize into operations</li>
+                                         <li>•	Took a test and got NC Personal Lines Insurance License</li>
+                                         <li>•	Handled customer accounts and made alterations requested by the customer</li>
+                                    </ul>
+                                    <!--End Collapsible Table for Work Elements-->
+                                  </div>
+                              </li>
                           </ul>
-                          <!--End Collapsible Table for Work Elements-->
-                       </span>
+                        </span>
+                      </div>
+                    </div>
+                </div><!--End State Farm-->
+              <div class="divider" padding=50 ></div>
+                <!--The Harford-->
+                <div class="col s12 m8 offset-m2 l6 offset-l3">
+                     <div class="row valign-wrapper">
+                       <div class="col s6">
+                         <img src="IMG/Hartford.png" class="responsive-img" > <!-- notice the "circle" class -->
+                       </div>
+                       <div class="col s6">
+                         <span class="black-text">
+                           <!--Collapsible Table for Work Elements-->
+                           <ul class="collapsible popout" data-collapsible="accordion">
+                               <li>
+                                 <div class="collapsible-header">LDP Intern</div>
+                                   <div class="collapsible-body">
+                                     <ul> <li>•	Worked with development team on Guidewire configuration </li>
+                                          <li>•	Had three personal major ideas/projects implemented companywide to increase security and shirk costs</li>
+                                          <li>•	Presented a capstone anti-phishing project to senior management and created a security function for email that was pushed to all computers in the company</li>
+                                          <li>•	Developed two applications and their pcfs that were presented to senior developers and deployed into production</li>
+                                     </ul>
+                                   </div>
+                               </li>
+                               <li>
+                                 <div class="collapsible-header">ECLDP Associate</div>
+                                   <div class="collapsible-body">
+                                     <ul> <li>•	First Rotation: Worked with development team on a payroll billing optimization project that handled $2B in payroll billing</li>
+                                     </ul>
+                                   </div>
+                               </li>
+                            </ul>
+                            <!--End Collapsible Table for Work Elements-->
+                         </span>
+                       </div>
                      </div>
-                   </div>
-               </div><!--End The Harford-->
+                 </div><!--End The Harford-->
+            </div>
+
+          </li><!--End Work Experience-->
+
+        </ul>  <!--End Collapsible Table-->
+
+          <div class="card">
+            <div class="card-image" >
+                 <div class="carousel carousel-slider" >
+                   <a class="carousel-item" href="#one!"><img src="../IMG/Main.jpg"></a>
+                   <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/400/200/business/2"></a>
+                   <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/nature/3"></a>
+                   <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/nature/4"></a>
+                   <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/800/400/nature/5"></a>
+                   <span class="card-title">About Me</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <p>If you would like to learn a little about me, feel free to click bellow! </p>
+            </div>
+            <div class="card-action">
+              <a href="HTMLPages/AboutMe.html">Click to learn a little about me</a>
+            </div>
           </div>
 
-        </li><!--End Work Experience-->
 
-      </ul>  <!--End Collapsible Table-->
+          <div class="card">
+            <div class="card-image">
+            <div class="carousel carousel-slider">
+                <a class="carousel-item"  href="#one!"><img src="../IMG/Main.jpg" ></a>
+                <a class="carousel-item"  href="#two!"><img src="../IMG/GitHub.png" class="responsive-img"></a>
+                <a class="carousel-item"  href="#three!"><img src="https://lorempixel.com/800/400/nature/3" ></a>
+                <a class="carousel-item"  href="#four!"><img src="https://lorempixel.com/800/400/nature/4" ></a>
+                <a class="carousel-item"  href="#five!"><img src="https://lorempixel.com/800/400/nature/5" ></a>
+            </div>
+            <span class="card-title">Projects</span>
+          </div>
+          <div class="card-content">
+            <p>I have done several projects both professionaly and personally. If you would like to hear about them, click bellow!</p>
+          </div>
+          <div class="card-action">
+            <a href="HTMLPages/Projects.html">Click to see some of my projects</a>
+          </div>
+        </div>
+
+
+          <div class="card" style="padding:10px;">
+            <div class="card-image" style="padding:10px;">
+              <img src="https://lorempixel.com/400/200/business/2">
+              <span class="card-title">Contact Me</span>
+            </div>
+            <div class="card-content">
+              <p>Placeholder</p>
+            </div>
+            <div class="card-action">
+              <a href="HTMLPages/ContactMe.html">Contact Me</a>
+            </div>
+          </div>
+
+
+    </div>
+    <div class="footer"></div>
    </body>
- </html>
+</html>
+
+ <script type = 'text/javascript'>
+  $('#message').typeIt({
+     strings: ["- Office fan", "- Burger Enthusiast", "- Software Engineer"],
+     speed: 100,
+     breakLines: false,
+     autoStart: true
+  });
+</script>

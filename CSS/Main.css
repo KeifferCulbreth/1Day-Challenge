@@ -1,5 +1,84 @@
-.tabs-content.carousel { height: 100%; overflow-x:hidden; overflow-y: scroll; } .tabs-content.carousel .carousel-item { width: 100%; height: 100%; } html,body{ overflow:hidden; height:100%;
+.container-fluid {
+    padding: 0px;
+}
+.center{
+    margin: 0 auto;
+}
+.navbar-material .nav-wrapper .brand-logo img {
+    height: .navbar.height;
+}
+.full {
+    background: url(../IMG/Main.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+  .hello{
+      color: white;
+      font-size: 5em;
+      font-family: 'Montserrat', sans-serif;
+      background: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 35vh;
+      line-height: 1em;
+  }
+  .hello div{
+      font-size: 60%;
+      color: #eee;
+  }
+  .see_more{
+    position:absolute;
+    top:100vh;
+    transform:translateY(-120%);
+    width:100%;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.see_more .type_it_message{
+    color: rgba(255,255,255,0.7);
+}
+.see_more .type_it_message:hover{
+    color: rgba(255,255,255,1);
+}
 
+.project{
+  min-height: 900px;
+  background-color: white;
+}
+.filler{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+.footer{
+  background-color: grey;
+  height:60px;
+}
+.tabs-content.carousel {
+  height: 60%;
+  margin-top:-100px;
+  overflow-y: scroll;
+  }
+.tabs-content.carousel .carousel-item {
+  width: 100%;
+  height: 100%;
+  margin-top:-100px;
+    }
+
+
+body{
+  overflow: auto;
+  height:100%;
+    }
 .collapsible li.active i {
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
