@@ -32,8 +32,10 @@
     <!-- javascript imports -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jQuery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> <!-- typeit -->
-    <script src="jquery-3.1.1.min.js"></script>
+
+
+    <!-- text effects -->
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <script src="Lettering.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -43,8 +45,8 @@
 
    </head>
 
-   <body class="Homepage">
-
+<body class="Homepage">
+<!--Landing Page-->
 <div class="container-fluid">
     <div class="full">
       <div class="hello">
@@ -60,9 +62,11 @@
           </div>
       </a>
     </div>
-</div>
+</div><!--End Landing Page-->
 
 <div id="begin_main" class="filler"></div>
+
+<!--Project-->
 <div class="container-fluid project">
 
 
@@ -219,7 +223,7 @@
 
         </ul>  <!--End Collapsible Table-->
 
-          <div class="card">
+          <div class="card"><!--About Me-->
             <div class="card-image" >
                  <div class="carousel carousel-slider" >
                    <a class="carousel-item" href="#one!"><img src="../IMG/Main.jpg"></a>
@@ -236,11 +240,11 @@
             <div class="card-action">
               <a href="HTMLPages/AboutMe.html">Click to learn a little about me</a>
             </div>
-          </div>
+          </div><!--End About Me-->
 
 
-          <div class="card">
-            <div class="card-image">
+        <div class="card"><!--Projects-->
+          <div class="card-image">
             <div class="carousel carousel-slider">
                 <a class="carousel-item"  href="#one!"><img src="../IMG/Main.jpg" ></a>
                 <a class="carousel-item"  href="#two!"><img src="../IMG/GitHub.png" class="responsive-img"></a>
@@ -256,10 +260,10 @@
           <div class="card-action">
             <a href="HTMLPages/Projects.html">Click to see some of my projects</a>
           </div>
-        </div>
+        </div><!-- End Projects-->
 
 
-          <div class="card" style="padding:10px;">
+          <div class="card" style="padding:10px;"><!--Contact-->
             <div class="card-image" style="padding:10px;">
               <img src="https://lorempixel.com/400/200/business/2">
               <span class="card-title">Contact Me</span>
@@ -290,24 +294,22 @@
                       <div><input type="submit" value="Send Message"></div>
                   </div>
               </form>
-          </div>
-              </a>
-            </div>
-          </div>
-        </div>
+              </div>
+            </div><!--End Contact-->
 
-      </div>
-    <div class="footer"></div>
+</div> <!--End Project-->
 
-   </body>
+<div class="footer"></div>
+
+</body>
 
 </html>
 
- <script type = 'text/javascript'>
-  $('#message').typeIt({
-     strings: ["- 'The Office' fan ", "- Burger Enthusiast", "- Software Engineer"],
-     speed: 100,
-     breakLines: false,
-     autoStart: true
-  });
+<script type = 'text/javascript'>
+ $('#message').typeIt({
+    strings: ["- 'The Office' fan ", "- Burger Enthusiast", "- Software Engineer"],
+    speed: 100,
+    breakLines: false,
+    autoStart: true
+ });
 </script>
