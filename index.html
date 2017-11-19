@@ -25,6 +25,7 @@
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https//fonts.googleapis.com/css?family=Terminal+Dosis" />
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
+
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -33,7 +34,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> <!-- typeit -->
     <script src="jquery-3.1.1.min.js"></script>
-    <script src="typeit.js"></script>
     <script src="Lettering.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -61,6 +61,7 @@
       </a>
     </div>
 </div>
+
 <div id="begin_main" class="filler"></div>
 <div class="container-fluid project">
 
@@ -247,7 +248,7 @@
                 <a class="carousel-item"  href="#four!"><img src="https://lorempixel.com/800/400/nature/4" ></a>
                 <a class="carousel-item"  href="#five!"><img src="https://lorempixel.com/800/400/nature/5" ></a>
             </div>
-            <span class="card-title">Projects</span>
+            <div id="message"></div>
           </div>
           <div class="card-content">
             <p>I have done several projects both professionaly and personally. If you would like to hear about them, click bellow!</p>
@@ -263,23 +264,47 @@
               <img src="https://lorempixel.com/400/200/business/2">
               <span class="card-title">Contact Me</span>
             </div>
-            <div class="card-content">
-              <p>Placeholder</p>
-            </div>
-            <div class="card-action">
-              <a href="HTMLPages/ContactMe.html">Contact Me</a>
+            <div class="container-fluid contact_main">
+              <p>
+                  <span class="glyphicon glyphicon-envelope"></span>
+                  <span class="contact_title">Shoot me an email</span>
+              </p>
+              <form name="contact_me" class="contact_me">
+                  <div class="row">
+                      <div class="col-sm-3 col-sm-offset-2">
+                          <span class="form_labels">name: </span>
+                          <input type="text">
+                      </div>
+                      <div class="col-sm-3 col-sm-offset-2">
+                          <span class="form_labels">email: </span>
+                          <input type="text">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-8 col-sm-offset-2">
+                          <span class="form_labels">message: </span>
+                          <textarea rows="6"></textarea>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div><input type="submit" value="Send Message"></div>
+                  </div>
+              </form>
+          </div>
+              </a>
             </div>
           </div>
+        </div>
 
-
-    </div>
+      </div>
     <div class="footer"></div>
+
    </body>
 
 </html>
 
  <script type = 'text/javascript'>
-  $('message').typeIt({
+  $('#message').typeIt({
      strings: ["- 'The Office' fan ", "- Burger Enthusiast", "- Software Engineer"],
      speed: 100,
      breakLines: false,

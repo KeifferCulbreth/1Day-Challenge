@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $("#get_to_know").click(function() {
         $('html,body').animate({
-            scrollTop: $("#begin_main ").offset().top
+            scrollTop: $("#begin_main").offset().top
         }, 1000)
     });
 
@@ -18,13 +18,13 @@ $(document).ready(function(){
   $('.carousel.carousel-slider').carousel();
 });
 
-$(document).ready(function () {
-    var menu = $('.menu');
-        var target = $('#' +menu.attr("data-target"));
-    menu.pushpin({
-      top: target.offset().top,
-    });
-});
+// $(document).ready(function () {
+//     var menu = $('.menu');
+//         var target = $('#' +menu.attr("data-target"));
+//     menu.pushpin({
+//       top: target.offset().top,
+//     });
+// });
   //  $('.carousel').carousel('next');
   //  $('.carousel').carousel('next', 3); // Move next n times.
 
