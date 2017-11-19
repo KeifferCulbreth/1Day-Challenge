@@ -77,10 +77,23 @@
 
 body{
   overflow: auto;
+  overflow-x: hidden;
   height:100%;
     }
-.collapsible li.active i {
+.collapsible li.active i.right {
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
   transform: rotate(180deg);
 }
+.bounceInLeft {
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 2s;
+ }
+ .fadeInRight {
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 3s;
+ }
+ .rotateInUpRight{
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 5s;
+ }

@@ -8,6 +8,10 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
      <link rel="stylesheet" href="CSS/Main.css">
 
+     <!--Import Animate-->
+     <link rel="stylesheet" href="CSS/animate.min.css">
+
+
      <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -26,6 +30,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jQuery -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script> <!-- typeit -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="typeit.js"></script>
+    <script src="Lettering.js"></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -43,7 +50,9 @@
     <div class="full">
       <div class="hello">
           Hi, I'm <strong>Keiffer Culbreth</strong>
-          <div id="message"></div>
+          <h1 class="animated bounceInLeft" id="message1">Software Developer</h1>
+          <h1 class="animated fadeInRight" id="message2">Self Starter</h1>
+          <h1 class="animated rotateInUpRight" id="message3">Lifetime Learner</h1>
       </div>
       <a href="#">
           <div class="see_more">
@@ -83,6 +92,7 @@
              <div class="collapsible-header active">
                <i class="material-icons">code</i>
                Education
+               <i class="material-icons right">expand_less</i>
              </div>
 
             <!--Anderson-->
@@ -135,9 +145,10 @@
 
            <!--Work Experience-->
            <li>
-             <div class="collapsible-header active">
+             <div class="collapsible-header">
                <i class="material-icons">work</i>
                Work Experience
+                <i class="material-icons right">expand_less</i>
              </div>
 
 
@@ -268,8 +279,8 @@
 </html>
 
  <script type = 'text/javascript'>
-  $('#message').typeIt({
-     strings: ["- Office fan", "- Burger Enthusiast", "- Software Engineer"],
+  $('message').typeIt({
+     strings: ["- 'The Office' fan ", "- Burger Enthusiast", "- Software Engineer"],
      speed: 100,
      breakLines: false,
      autoStart: true
