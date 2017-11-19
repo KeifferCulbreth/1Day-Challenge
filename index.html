@@ -69,25 +69,6 @@
 <!--Project-->
 <div class="container-fluid project">
 
-
-    <!-- <div class="navbar-fixed " id="menu">
-      <nav class="menu" data-target="menu">
-        <div class="nav-wrapper cyan">
-          <a href="index.html" class="brand-logo center"><img class="responsive-img" id="logo" src="IMG/Logo.png"/></a>
-          <ul id="nav-desktop" class="right hide-on-med-and-down">
-            <li><a class"waves-effect waves-light" href="HTMLPages/AboutMe.html">About Me</a></li>
-            <li><a href="HTMLPages/Projects.html">Projects</a></li>
-            <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
-          </ul>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="side-nav  hide-on-large" id="mobile-demo">
-            <li><a href="HTMLPages/AboutMe.html">About Me</a></li>
-            <li><a href="HTMLPages/Projects.html">Projects</a></li>
-            <li><a href="HTMLPages/ContactMe.html">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div> -->
         <!--Collapsible Table for Education and Work-->
          <ul class="collapsible" data-collapsible="expandable">
 
@@ -295,6 +276,7 @@
                   </div>
               </form>
               </div>
+            <a  href="https://github.com/KeifferCulbreth">  <img  src="../IMG/Logo.png"  style="height:100%" class="responsive-img center"></a>
             </div><!--End Contact-->
 
 </div> <!--End Project-->
@@ -312,4 +294,8 @@
     breakLines: false,
     autoStart: true
  });
+ function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
 </script>
