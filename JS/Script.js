@@ -5,6 +5,12 @@ $(document).ready(function(){
             scrollTop: $("#begin_main ").offset().top
         }, 1000)
     });
+
+    // $("#projectButton").click(function() {
+    //     $('html,body').animate({
+    //         scrollTop: $("#Projects").offset().top
+    //     }, 1000)
+    // });
    });
 $(document).ready(function(){
   $(".button-collapse").sideNav();

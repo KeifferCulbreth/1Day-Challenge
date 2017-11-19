@@ -18,19 +18,19 @@
 }
   .hello{
       color: white;
-      font-size: 5em;
-      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      font-family:'8BITWONDERNominal';
       background: none;
       position: absolute;
       left: 0;
       right: 0;
-      margin-left: auto;
+      margin-left: 4vw;
       margin-right: auto;
-      margin-top: 35vh;
+      margin-top: 30vh;
       line-height: 1em;
   }
   .hello div{
-      font-size: 60%;
+      font-size: 20%;
       color: #eee;
   }
   .see_more{
